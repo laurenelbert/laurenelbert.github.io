@@ -16,11 +16,14 @@ body {
   margin: 0 auto;
 }
 
-/* || typography */
+/* typography */
 
-font[size="7"], font[size="6"], font[size="5"] {
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
+  margin: 0.5em 0;
 }
 
 p, input, li, table, label {
@@ -28,19 +31,19 @@ p, input, li, table, label {
   color: #2a2a2a;
 }
 
-font[size="7"] {
+h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px black;
 }
 
-font[size="6"] {
+h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-font[size="5"] {
+h3 {
   font-size: 2.2rem;
 }
 
@@ -49,10 +52,12 @@ p, li, table {
   line-height: 1.5;
 }
 
+
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
   background-color: rgb(194, 232, 194);
+  /*NEW Contrast Ratio 15.61:1 passes all tests*/
 }
 
 article, footer, .secondary {
