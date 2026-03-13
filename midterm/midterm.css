@@ -309,7 +309,7 @@ section {
   background-color: white;
   width: 100%;
   padding: 20px;
-  margin: 0 0 20px 0;
+  margin: 10px 10px 10px 0 ;
   border: 1px solid #ddd;
   border-left: 6px solid #FF4F00;
   border-radius: 12px;
@@ -319,7 +319,7 @@ section {
   background-color: white;
   width: 100%;
   padding: 20px;
-  margin: 0 0 20px 0;
+   margin: 10px 10px 10px 0 ;
   border: 1px solid #ddd;
   border-right: 6px solid #FF4F00;
   border-radius: 12px;
