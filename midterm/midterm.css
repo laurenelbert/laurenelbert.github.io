@@ -80,6 +80,7 @@ h4 {
   color: gray;
   font-family: monospace;
   text-transform: uppercase;
+  padding: 10px;
 }
 .footer {
   margin-top: 40px;
