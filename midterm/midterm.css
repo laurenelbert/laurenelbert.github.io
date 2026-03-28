@@ -223,7 +223,8 @@ section {
 }
 
 .project {
-  width: 320px;
+  flex: 1 1 300px;
+  max-width: 100%;
   padding: 20px;
   background: linear-gradient(white, #fff7f3);
   border: 1px solid #ddd;
