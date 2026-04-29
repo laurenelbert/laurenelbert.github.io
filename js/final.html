@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Bad Volume Control</title>
-   <link rel="stylesheet" href="final.css">
-   <script src="final.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume Control</title>
+  <link rel="stylesheet" href="https://use.typekit.net/pzr1kdt.css">
+  
+  <link rel="stylesheet" href="final.css">
 </head>
+
 <body>
-   <main>
-      <h1>Volume Control</h1>
-      <p>Tdid you ever want to practice your imessage games under a high stakes scenario?</p>
+<main>
 
-      <div id="gameArea">
-         <div id="board">
-            <div class="ring outer"></div>
-            <div class="ring middle"></div>
-            <div class="ring inner"></div>
-            <div class="ring bullseye"></div>
-         </div>
-      </div>
+  <h1>Volume Control</h1>
+  <h2>Click to throw dart. Hold click to increase accuracy.</h2>
 
+  <div id="gameArea">
+
+    <div id="sidePanel">
       <p id="scoreText">Volume Score: 0</p>
-      <button id="submitBtn">is the volume high enough?</button>
-      <p id="message"></p>
-   </main>
+      <button id="submitBtn">Set Volume</button>
+      <button id="resetBtn">Reset Score</button>
+    </div>
+
+    <div id="board">
+
+      <div class="slice s1"></div>
+      <div class="slice s2"></div>
+      <div class="slice s3"></div>
+      <div class="slice s4"></div>
+      <div class="slice s5"></div>
+      <div class="slice s6"></div>
+      <div class="slice s7"></div>
+      <div class="slice s8"></div>
+
+      <!--
+        Labels are placed at radius 110px from the board center (180, 180).
+ 
+          s1 rotate(270): CSS THRU 225-270, half 247.5 => left:138, top: 78, points= 20
+          s2 rotate(315): CSS THRUE 270-315, half 292.5 => left:222, top: 78, points=-20
+          s3 rotate(  0): CSS THRU 315-360, half 337.5 => left:282, top:138, points=-10
+          s4 rotate( 45): CSS THRU  0- 45, half  22.5 => left:282, top:222, points= -5
+          s5 rotate( 90): CSS THRU 45- 90, half  67.5 => left:222, top:282, points=  5
+          s6 rotate(135): CSS THRU 90-135, half 112.5 => left:138, top:282, points= 10
+          s7 rotate(180): CSS THRU 135-180, half 157.5 => left: 78, top:222, points= 15
+          s8 rotate(225): CSS THRU 180-225, half 202.5 => left: 78, top:138, points=-15
+
+      -->
+      <div class="label" style="top:  78px; left: 138px;"> 20</div>
+      <div class="label" style="top:  78px; left: 222px;">-20</div>
+      <div class="label" style="top: 138px; left: 282px;">-10</div>
+      <div class="label" style="top: 222px; left: 282px;"> 10</div>
+      <div class="label" style="top: 282px; left: 222px;">  5</div>
+      <div class="label" style="top: 282px; left: 138px;"> -5</div>
+      <div class="label" style="top: 222px; left:  78px;"> 15</div>
+      <div class="label" style="top: 138px; left:  78px;">-15</div>
+
+      <div id="bullseye"></div>
+
+    </div>
+  </div>
+
+</main>
+
+<script src="final.js"></script>
 </body>
 </html>
