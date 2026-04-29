@@ -69,7 +69,7 @@ window.addEventListener("load", function () {
         // add 360 to any negative value to get 0-360 so that we cna math
         if (angle < 0) { angle += 360; }
 
-         //225-270 lines up with index 0
+         //225-270 lines up with 0
         angle = (angle + 135) % 360;
 
         //gives one of the slices 1-8
